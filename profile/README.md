@@ -1,6 +1,6 @@
 ## Bienvenidos a todos! ❤️
 
-<img alt="Banner" src="./assets/banner.png">
+<img alt="Banner" src="https://github.com/lyoss-usm/.github/blob/b765686a4c4ba1e752f51b3ddecc1391510e5dc4/profile/assets/banner.png">
 
 Somos Linux y Opensource USM, una comunidad e iniciativa estudiantil de la Universidad Técnica Federico Santa María que comparte, colabora y crea en torno a Linux y al Código Abierto. Democratizamos el conocimiento para transformar la cultura digital.
 
