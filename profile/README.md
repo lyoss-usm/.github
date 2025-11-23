@@ -1,6 +1,6 @@
 ## Bienvenidos a todos! ❤️
 
-![Banner](profile/assets/banner.png)
+![Banner](./assets/banner2.jpg)
 
 Somos Linux y Opensource USM, una comunidad e iniciativa estudiantil de la Universidad Técnica Federico Santa María que comparte, colabora y crea en torno a Linux y al Código Abierto. Democratizamos el conocimiento para transformar la cultura digital.
 
