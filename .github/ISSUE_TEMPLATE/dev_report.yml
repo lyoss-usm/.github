@@ -7,11 +7,14 @@ body:
     id: user-story
     attributes:
       label: Historia de Usuario
-      description: Describe la funcionalidad desde la perspectiva del usuario final
+      description: |
+        **Como** usuario
+        **Quiero** lograr algo
+        **Para** obtener un beneficio
       value: |
-        **Como** _visitante_
-        **Quiero** entender de inmediato la propuesta de valor y tener un camino claro para unirme
-        **Para** convertir mi interés en una acción concreta (unirme/colaborar) sin fricción ni dudas
+        **Como** 
+        **Quiero** 
+        **Para**
     validations:
       required: true
 
@@ -28,9 +31,9 @@ body:
       label: Criterios de Aceptación
       description: Lista los criterios que deben cumplirse
       value: |
-        - [ ] 
-        - [ ] 
-        - [ ]
+        - [ ] Criterio 1
+        - [ ] Criterio 2
+        - [ ] Criterio 3
     validations:
       required: true
 
@@ -46,9 +49,9 @@ body:
       label: Tareas
       description: Lista de tareas técnicas para implementar la historia
       value: |
-        - [ ] 
-        - [ ] 
-        - [ ]
+        - [ ] Tarea 1
+        - [ ] Tarea 2
+        - [ ] Tarea 3
     validations:
       required: true
 
