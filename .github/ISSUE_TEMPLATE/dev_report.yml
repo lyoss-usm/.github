@@ -40,7 +40,6 @@ body:
   - type: markdown
     attributes:
       value: |
-        ---
         ## Tareas de Desarrollo
 
   - type: textarea
