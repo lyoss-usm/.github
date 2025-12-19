@@ -43,26 +43,14 @@ body:
         ## Criterios de Aceptación
         Define las condiciones que deben cumplirse para considerar completada esta historia.
 
-  - type: checkboxes
+  - type: textarea
     id: acceptance-criteria
     attributes:
       label: Criterios de Aceptación
-      description: Marca los criterios que aplican o añade los propios
-      options:
-        - label: El paso principal para unirse debe lograrse en un solo clic desde la portada
-        - label: El Hero debe incluir título, subtítulo y botones CTA visibles sin scroll
-        - label: Los botones de acción deben repetirse en secciones estratégicas sin saturar
-        - label: El diseño debe ser totalmente Responsive
-        - label: Las URLs de destino deben estar configuradas correctamente
-
-  - type: textarea
-    id: additional-criteria
-    attributes:
-      label: Criterios Adicionales
-      description: Añade otros criterios de aceptación específicos si es necesario
-      placeholder: "- [ ] Criterio adicional 1\n- [ ] Criterio adicional 2"
+      description: Lista los criterios que deben cumplirse (usa formato `- [ ]` para checkboxes)
+      placeholder: "- [ ] Criterio 1\n- [ ] Criterio 2\n- [ ] Criterio 3"
     validations:
-      required: false
+      required: true
 
   - type: markdown
     attributes:
@@ -70,27 +58,14 @@ body:
         ---
         ## Tareas de Desarrollo
 
-  - type: checkboxes
+  - type: textarea
     id: dev-tasks
     attributes:
       label: Tareas
-      description: Lista de tareas técnicas para implementar la historia
-      options:
-        - label: Refinar diseño en Penpot
-        - label: Implementar componente principal
-        - label: Asegurar diseño Responsive
-        - label: Definir y configurar URLs de destino
-        - label: Pruebas de funcionalidad
-        - label: Revisión de código
-
-  - type: textarea
-    id: additional-tasks
-    attributes:
-      label: Tareas Adicionales
-      description: Añade otras tareas técnicas específicas
-      placeholder: "- [ ] Tarea adicional 1\n- [ ] Tarea adicional 2"
+      description: Lista de tareas técnicas para implementar la historia (usa formato `- [ ]` para checkboxes)
+      placeholder: "- [ ] Tarea 1\n- [ ] Tarea 2\n- [ ] Tarea 3"
     validations:
-      required: false
+      required: true
 
   - type: textarea
     id: technical-details
