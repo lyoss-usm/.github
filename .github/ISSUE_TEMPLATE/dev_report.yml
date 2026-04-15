@@ -12,7 +12,7 @@ body:
   - type: textarea
     id: user-story
     attributes:
-      label: " "
+      label: Contenido de la Historia
       description: |
         **Como** usuario **Quiero** lograr algo **Para** obtener un beneficio
       value: |
@@ -30,7 +30,7 @@ body:
   - type: textarea
     id: acceptance-criteria
     attributes:
-      label: "  " # Otro espacio para mantener la limpieza
+      label: Lista de Criterios
       description: Define las condiciones que deben cumplirse.
       value: |
         - [ ] Criterio 1
@@ -48,7 +48,7 @@ body:
   - type: textarea
     id: dev-tasks
     attributes:
-      label: "   "
+      label: Lista de Tareas
       description: Lista de tareas técnicas para implementar la historia.
       value: |
         - [ ] Tarea 1
@@ -66,7 +66,7 @@ body:
   - type: textarea
     id: notes
     attributes:
-      label: "    "
+      label: Notas
       placeholder: "Ej: Revisar el componente Button en la librería de UI..."
     validations:
       required: false
