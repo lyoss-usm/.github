@@ -1,6 +1,6 @@
 name: 🛠️ Tarea tecnica
 description: Template para redactar tareas tecnicas que necesitan cumplirse para continuar con el desarrollo
-title: "[ TASK ]: "
+title: "[TASK]: "
 labels: ["Tarea Tecnica"]
 body:
   # --- SECCIÓN OBJETIVO ---
@@ -8,14 +8,14 @@ body:
     attributes:
       value: |
         ## Objetivo
+        > ¿Qué se busca lograr con esta tarea? Explica el propósito técnico o la necesidad de esta implementación.
+
   - type: textarea
     id: objective
     attributes:
-      label: "Objetivo"
-      hide_label: true 
+      label: Descripción del Objetivo
       description: |
-        ¿Que se busca realizando esta tarea tecnica?
-        **Ej:** Inicializar el proyecto asegurando que la base cumpla con los estándares de estilo y accesibilidad definidos
+        **Ej:** Inicializar el proyecto asegurando que la base cumpla con los estándares de estilo y accesibilidad definidos.
     validations:
       required: true
   
@@ -23,13 +23,15 @@ body:
   - type: markdown
     attributes:
       value: |
+        ---
         ## Tareas
+        > Lista detallada de las subtareas técnicas a completar.
+
   - type: textarea
     id: dev-tasks
     attributes:
-      label: "Tareas"
-      hide_label: true
-      description: Lista de tareas técnicas a completar
+      label: Listado de subtareas
+      description: Pasos técnicos específicos.
       value: |
         - [ ] Tarea 1
         - [ ] Tarea 2
@@ -42,13 +44,13 @@ body:
     attributes:
       value: |
         ## Notas Adicionales
+        > Contexto extra, tecnicismos, documentación de referencia o consideraciones especiales.
+
   - type: textarea
     id: notes
     attributes:
-      label: "Notas Adicionales"
-      hide_label: true
-      description: Cualquier información adicional o contexto relevante
-      placeholder: "Añade contexto, referencias, tecnicismos, o consideraciones especiales..."
+      label: Notas y Referencias
+      placeholder: "Añade contexto, referencias, tecnicismos..."
       render: markdown
     validations:
       required: false
