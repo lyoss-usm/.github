@@ -1,0 +1,54 @@
+name: 🛠️ Tarea tecnica
+description: Template para redactar tareas tecnicas que necesitan cumplirse para continuar con el desarrollo
+title: "[ TASK ]: "
+labels: ["Tarea Tecnica"]
+body:
+  # --- SECCIÓN OBJETIVO ---
+  - type: markdown
+    attributes:
+      value: |
+        ## Objetivo
+  - type: textarea
+    id: objective
+    attributes:
+      label: "Objetivo"
+      hide_label: true 
+      description: |
+        ¿Que se busca realizando esta tarea tecnica?
+        **Ej:** Inicializar el proyecto asegurando que la base cumpla con los estándares de estilo y accesibilidad definidos
+    validations:
+      required: true
+  
+  # --- SECCIÓN TAREAS ---
+  - type: markdown
+    attributes:
+      value: |
+        ## Tareas
+  - type: textarea
+    id: dev-tasks
+    attributes:
+      label: "Tareas"
+      hide_label: true
+      description: Lista de tareas técnicas a completar
+      value: |
+        - [ ] Tarea 1
+        - [ ] Tarea 2
+        - [ ] Tarea 3
+    validations:
+      required: true
+
+  # --- SECCIÓN NOTAS ---
+  - type: markdown
+    attributes:
+      value: |
+        ## Notas Adicionales
+  - type: textarea
+    id: notes
+    attributes:
+      label: "Notas Adicionales"
+      hide_label: true
+      description: Cualquier información adicional o contexto relevante
+      placeholder: "Añade contexto, referencias, tecnicismos, o consideraciones especiales..."
+      render: markdown
+    validations:
+      required: false
