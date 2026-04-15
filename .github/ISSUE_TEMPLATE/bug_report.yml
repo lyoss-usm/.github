@@ -8,10 +8,6 @@ body:
       value: |
         ¡Gracias por tomarte el tiempo de reportar esto! Un buen reporte nos ayuda a solucionar el problema más rápido.
 
-  - type: markdown
-    attributes:
-      value: |
-        ## Descripción del error
   - type: textarea
     id: description
     attributes:
@@ -21,10 +17,6 @@ body:
     validations:
       required: true
 
-  - type: markdown
-    attributes:
-      value: |
-        ## Pasos para reproducir
   - type: textarea
     id: steps
     attributes:
