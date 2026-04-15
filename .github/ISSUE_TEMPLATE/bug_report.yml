@@ -1,34 +1,65 @@
 name: 🐛 Reportar un Error
 description: Crea un reporte para ayudarnos a mejorar
 title: "[Bug]: "
-labels: ["bug", "triage"]
+labels: ["Bug"]
 body:
   - type: markdown
     attributes:
       value: |
-        ¡Gracias por tomarte el tiempo de reportar esto!
+        ¡Gracias por tomarte el tiempo de reportar esto! Un buen reporte nos ayuda a solucionar el problema más rápido.
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Descripción del error
   - type: textarea
     id: description
     attributes:
       label: Descripción del error
       description: ¿Qué está pasando y qué esperabas que pasara?
-      placeholder: Al hacer click en...
+      placeholder: Al hacer click en el botón de login, la pantalla se queda en blanco...
     validations:
       required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Pasos para reproducir
   - type: textarea
     id: steps
     attributes:
       label: Pasos para reproducir
       description: Lista los pasos para que podamos ver el error.
-      placeholder: |
+      value: |
         1. Ir a '...'
         2. Click en '....'
         3. Scroll hasta '....'
         4. Ver el error
     validations:
       required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## Evidencia (Screenshots/Videos)
+        > **Tip:** Puedes arrastrar imágenes o pegarlas directamente en el recuadro de abajo.
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Capturas de pantalla
+      description: Añade imágenes o GIFs que muestren el error.
+      placeholder: Arrastra tus archivos aquí...
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
   - type: input
     id: environment
     attributes:
       label: Entorno (OS, Navegador, Versión)
-      placeholder: Windows 10, Chrome 98, Node.js 16...
+      placeholder: Windows 11, Chrome 120, v2.0.4...
+    validations:
+      required: true
