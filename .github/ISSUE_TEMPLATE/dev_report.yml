@@ -1,35 +1,38 @@
-name: 📋 Dev Report
-description: Template para reportar historias de usuario con criterios de aceptación y tareas de desarrollo
-title: "[HU]: "
-labels: ["dev", "enhancement"]
+name: 📖 Historia de Usuario
+description: Template para redactar historias de usuario con criterios de aceptación y tareas de desarrollo
+title: "[ HU ]: "
+labels: ["Funcionalidad"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Historia de Usuario
+        > Describe la funcionalidad desde la perspectiva del usuario final. El **"Para"** debe entregar valor y el **Como** debe ser un interesado/stakeholder.
+
   - type: textarea
     id: user-story
     attributes:
       label: Historia de Usuario
+      hide_label: true
       description: |
-        **Como** usuario
-        **Quiero** lograr algo
-        **Para** obtener un beneficio
+        **Como** usuario **Quiero** lograr algo **Para** obtener un beneficio
       value: |
-        **Como** 
-        **Quiero** 
-        **Para**
-    validations:
+        **Como** **Quiero** **Para** validations:
       required: true
 
   - type: markdown
     attributes:
-      value: |
+    value: |
         ---
         ## Criterios de Aceptación
-        Define las condiciones que deben cumplirse para considerar completada esta historia.
-
+        > Define las condiciones mínimas para que esta historia se considere "terminada".
+  
   - type: textarea
     id: acceptance-criteria
     attributes:
       label: Criterios de Aceptación
-      description: Lista los criterios que deben cumplirse
+      hide_label: true
+      description: Define las condiciones que deben cumplirse.
       value: |
         - [ ] Criterio 1
         - [ ] Criterio 2
@@ -40,13 +43,15 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## Tareas de Desarrollo
+        ## Tareas
+        > Desglose técnico de los pasos necesarios para la implementación.
 
   - type: textarea
     id: dev-tasks
     attributes:
       label: Tareas
-      description: Lista de tareas técnicas para implementar la historia
+      hide_label: true
+      description: Lista de tareas técnicas para implementar la historia.
       value: |
         - [ ] Tarea 1
         - [ ] Tarea 2
@@ -54,12 +59,17 @@ body:
     validations:
       required: true
 
+  - type: markdown
+    attributes:
+      value: |
+        ### Notas adicionales
+        > Contexto extra, enlaces, documentación técnica o dependencias.
   - type: textarea
     id: notes
     attributes:
-      label: Notas Adicionales
-      description: Cualquier información adicional o contexto relevante
-      placeholder: "Añade contexto, referencias, tecnicismos, o consideraciones especiales..."
+      label: Notas adicionales
+      hide_label: true
+      placeholder: "Ej: Revisar el componente Button en la librería de UI..."
       render: markdown
     validations:
       required: false
