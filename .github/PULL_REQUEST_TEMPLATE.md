@@ -18,3 +18,6 @@ Algun detalle importante..
 ```
 
 ```El numero despues del # debe ser el numero da la issue
+```
+
+```Usa las labels correspondientes para la PR. Si vas de dev a main, utiliza "Release"
