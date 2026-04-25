@@ -1,0 +1,54 @@
+name: 🚀 Épica
+description: Template para definir grandes bloques de trabajo (Epics) que agrupan tareas técnicas y de usuario.
+title: "[EPIC]: "
+labels: ["Epic"]
+body:
+  # --- SECCIÓN RESUMEN ---
+  - type: markdown
+    attributes:
+      value: |
+        ## Resumen de la Épica
+        > Describe de forma general qué valor aporta este conjunto de trabajo.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Visión General
+      placeholder: "Ej: Implementación del sistema de autenticación robusto para la plataforma..."
+    validations:
+      required: true
+
+  # --- SECCIÓN OBJETIVOS ---
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ## Objetivos de la Épica
+        > ¿Cuáles son los hitos o resultados esperados al finalizar este bloque de trabajo?
+
+  - type: textarea
+    id: epic-goals
+    attributes:
+      label: Objetivos Clave
+      description: Define qué define el éxito de esta épica.
+      value: |
+        - [ ] Objetivo 1
+        - [ ] Objetivo 2
+    validations:
+      required: true
+
+  # --- SECCIÓN NOTAS ---
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ## 💡 Notas y Contexto
+        > Documentación de arquitectura, diagramas, dependencias con otras épicas o riesgos identificados.
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Información Adicional
+      placeholder: "Enlaces a Figma, documentos de diseño, decisiones de arquitectura..."
+    validations:
+      required: false
