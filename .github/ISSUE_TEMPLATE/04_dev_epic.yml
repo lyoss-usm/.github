@@ -32,8 +32,8 @@ body:
       label: Objetivos Clave
       description: Define qué define el éxito de esta épica.
       value: |
-        - [ ] Objetivo 1
-        - [ ] Objetivo 2
+        - Objetivo 1
+        - Objetivo 2
     validations:
       required: true
 
