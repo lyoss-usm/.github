@@ -51,6 +51,5 @@ body:
     attributes:
       label: Notas y Referencias
       placeholder: "Añade contexto, referencias, tecnicismos..."
-      render: markdown
     validations:
       required: false
