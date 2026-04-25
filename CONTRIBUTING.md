@@ -1,53 +1,84 @@
-# Contributing
+# Guía de Contribución (CONTRIBUTING.md)
 
-## 1. Flujo de Trabajo (Workflow)
-
-Utilizamos el modelo de colaboración [**Fork & Pull**](https://stackoverflow.com/questions/11582995/what-is-the-fork-pull-model-in-github). No se permiten commits directos a la rama `main` o `master` bajo ninguna circunstancia.
-
-1.  **Fork:** Realice un fork del repositorio objetivo a su cuenta personal.
-2.  **Rama (Branch):** Cree una rama descriptiva para su trabajo. Utilizaremos nombres de ramas semanticas, esto significa que el nombre debe reflejar el tipo de cambio que se realizará. [Mas información.](https://dev.to/marmariadev/estrategias-de-nomenclatura-para-ramas-en-git-mejorando-la-gestion-de-proyectos-de-software-3efa)
-
-    - Formato: `tipo/nombre-corto`
-    - Ejemplo: `feat/autenticacion-oauth`, `fix/fuga-memoria-api`.
-
-3.  **Desarrollo:** Implemente los cambios localmente.
-4.  **Sincronización:** Asegúrese de que su rama esté actualizada con `upstream/main` antes de enviar cambios para evitar conflictos.
-5.  **Pull Request:** Envíe un Pull Request (PR) hacia la rama main del repositorio original.
-
-## 2. Política de Commits
-
-Adherimos a la especificación [**Conventional Commits**](https://www.conventionalcommits.org/) para mantener un historial de cambios claro y estructurado.
-
-La estructura del mensaje debe ser: `<tipo>: <descripción breve>`
-
-**Tipos permitidos:**
-
-- `feat`: Una nueva funcionalidad para el usuario.
-- `fix`: Corrección de un error (bug).
-- `refactor`: Cambio de código que no corrige errores ni añade funcionalidades (mejora de estructura/rendimiento).
-- `docs`: Cambios exclusivamente en la documentación.
-- `chore`: Tareas de mantenimiento, dependencias o configuración de build.
-- `test`: Añadir o corregir pruebas.
-
-> **_NOTE:_** Si tiene dudas sobre qué tipo utilizar, opte por `chore`.
-
-_Ejemplo correcto:_ `feat: implementar endpoint de login con JWT`, `fix: corregir validación de email en formulario de registro`
-_Ejemplo incorrecto:_ `arreglé el bug del login`, `cambios en la documentación`
-
-## 4. Reporte de Incidentes (Issues)
-
-Antes de abrir un issue, verifique que no exista uno similar abierto o cerrado.
-
-- **Bug Reports:** Debe incluir pasos exactos de reproducción, entorno (SO, versión del lenguaje/framework) y logs de error si aplica.
-- **Feature Requests:** Debe detallar la justificación técnica o funcional de la propuesta.
-
-## 5. Proceso de Revisión (Code Review)
-
-Todos los Pull Requests requieren la aprobación de al menos un mantenedor del proyecto.
-
-- Sea receptivo a los comentarios durante la revisión de código.
-- Si se solicitan cambios, realícelos en la misma rama y haga push; el PR se actualizará automáticamente.
+¡Hola! 👋 Muchas gracias por tu interés en contribuir a este proyecto de la **Comunidad Linux y Open Source (Lyoss USM)**. 
+Continuamente nos pica el bichito por codear algo y lo hacemos, siempre buscando generar un impacto real en la vida universitaria. No importa si estás en primer año, si es tu primera vez usando Git, o si ya eres un experto; **todas las contribuciones son bienvenidas**. 
+Esta guía te explicará cómo trabajamos de forma general en nuestros proyectos para que tu experiencia sea fluida y educativa.
 
 ---
 
-**Nota:** Al participar en este proyecto, usted acepta cumplir con nuestro [Código de Conducta](CODE_OF_CONDUCT.md). El incumplimiento de estas normas puede resultar en la desestimación de sus contribuciones.
+## 💬 ¿Necesitas ayuda o tienes dudas?
+
+Entendemos que leer código nuevo puede ser intimidante. Si encuentras un Issue que quieres tomar pero no sabes por dónde empezar, o si te atascas en algún punto del desarrollo: **¡No te quedes en silencio!**
+
+* Cada uno de nuestros proyectos tiene un canal público asignado.
+* **Únete a nuestro servidor de Discord:** [**Ingresa aquí**](https://discord.gg/2mCzKu2yPV) y pregunta con toda confianza en el canal del proyecto. Los Jefes de Proyecto y Maintainers están ahí exactamente para guiarte.
+
+---
+
+## 🛠️ ¿Cómo empezar a programar?
+
+Este documento explica la *metodología* general, pero las instrucciones técnicas específicas de cada proyecto viven en otro lado.
+
+1. Para saber cómo descargar el código, instalar las dependencias y hacer correr el proyecto en tu computador, **por favor lee el archivo `README.md`** que se encuentra en la raíz de este repositorio.
+2. Ve a la pestaña de **Issues** en GitHub.
+3. Busca una tarea que te llame la atención y que esté libre. (💡 *Tip: Si eres nuevo, busca las etiquetas `good first issue` o `docs`*).
+4. **Auto-asígnate** el Issue usando la opción "Assignees" o en la Sección Project. ¡No necesitas pedir permiso, la tarea es tuya!
+
+---
+
+## 🌿 Nuestro Flujo de Trabajo (Git)
+
+Para evitar que el código se rompa, nunca trabajamos directamente sobre las ramas principales (`main` o `dev`).
+
+1. Asegúrate de tener tu repositorio local actualizado.
+2. Crea una rama nueva partiendo siempre desde la rama **`dev`**.
+3. Nombra tu rama según lo que vayas a hacer:
+   * `feature/nombre-de-tu-tarea` (Si es una funcionalidad nueva)
+   * `fix/nombre-del-error` (Si vas a arreglar un bug)
+   * `docs/nombre-del-documento` (Si solo vas a escribir o arreglar textos)
+
+---
+
+## ✍️ El Estándar de Commits (Conventional Commits)
+
+En Lyoss USM queremos prepararte para la industria, por eso no aceptamos commits con mensajes como *"cambios"*, *"ahora si funciona"*, o *"asdfg"*. 
+Utilizamos un estándar profesional llamado **Conventional Commits**. Es muy fácil de usar: cada commit debe empezar con una palabra clave que explique *qué tipo de cambio* hiciste.
+
+### Tipos más comunes:
+* **`feat:`** (Feature) Agregaste una nueva funcionalidad.
+  * *Ejemplo:* `feat: agrega botón de modo oscuro`
+* **`fix:`** Solucionaste un error o bug.
+  * *Ejemplo:* `fix: corrige error al calcular el promedio`
+* **`docs:`** Cambios únicamente en la documentación (como este archivo o el README).
+  * *Ejemplo:* `docs: actualiza links de Discord`
+* **`style:`** Cambios visuales o de formato de código que no afectan la lógica (espacios, punto y coma, etc).
+* **`refactor:`** Cambios en el código que no arreglan un bug ni añaden una funcionalidad, pero mejoran la estructura interna.
+
+Te recomendamos leer la [Documentación Oficial de Conventional Commits (en español)](https://www.conventionalcommits.org/es/v1.0.0/) para dominar esta habilidad.
+
+---
+
+## 🚀 Enviando tu código (Pull Requests)
+
+¡Terminaste tu tarea! Ahora debes integrar tu código al proyecto:
+
+1. Sube tu rama al repositorio en GitHub (`git push`).
+2. Abre un **Pull Request (PR)**.
+3. **MUY IMPORTANTE:** Tu PR siempre debe apuntar hacia la rama **`dev`**, nunca hacia `main`.
+4. Rellena la plantilla que aparecerá automáticamente.
+5. Para que nuestro tablero se mantenga ordenado, incluye en la descripción de tu PR una palabra clave seguida del número de tu Issue. 
+   * *Ejemplo:* Escribe `Closes #12` o `Fixes #12` para que GitHub cierre ese Issue automáticamente cuando aprobemos tu código.
+6. Espera la revisión de un Maintainer. Si te piden cambios, ¡no te desanimes! Es parte normal del proceso de aprendizaje. Haz los arreglos en tu misma rama y el PR se actualizará solo.
+
+---
+
+## 🏆 Reconocimiento a tu esfuerzo
+
+El código abierto lo hacen las personas, y queremos celebrar tu trabajo. 
+
+Al lograr que tu primer Pull Request sea aprobado e integrado (mergeado), pasarás oficialmente a ser un **Contribuidor de la Comunidad Linux y Open Source USM**. 
+* Tu nombre y perfil de GitHub quedarán inmortalizados en el historial del proyecto.
+* Tu contribución será mencionada en las Notas de Lanzamiento (Release Notes) cuando pasemos a producción.
+* ¡Y por supuesto, ganarás experiencia real que podrás mostrar en tu currículum!
+
+¡Feliz código y gracias por ser parte de la comunidad! 🐧💙
